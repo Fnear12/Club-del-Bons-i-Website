@@ -10,13 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel="stylesheet"> 
+      WHY DOESNT WORD?-->
+
 </head>
 
 <body>
   <section class="header">
     <nav>
-      <a href="index.html"><img src="images/club-icon.png" alt="Icon Error"></a>
-      <div class="nav-links">
+      <a href="index.html"><img src="images/icon-bonsai.png" alt="Icon Error"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="">INICIO</a></li>
           <li><a href="">FINALIDAD</a></li>
@@ -25,6 +30,7 @@
           <li><a href="">CONTACTO</a></li>
         </ul>
       </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
 
@@ -33,6 +39,8 @@
       <p>Un lugar de plena inclusión y seguridad para todo el mundo</p>
       <a href="" class="subtitle-btn">Visítanos para más información</a>
     </div>
+
+    <script src="./scripts/index.js"></script>
 
   </section>
 
