@@ -5,5 +5,6 @@ function showMenu() {
 }
 
 function hideMenu() {
-  navLinks.style.right = "-9rem"
+  const newLocal = "-12rem"
+  navLinks.style.right = newLocal
 }
