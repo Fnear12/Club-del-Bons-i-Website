@@ -6,24 +6,20 @@ body {
   font-family: 'Arima', cursive;
 }
 
+:root {
+  --header-width: 12rem;
+  /* Anchura desplegable */
+}
+
+
 body {
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(14, 32, 36, 0.7), rgba(14, 32, 36, 0.7)), url(images/bonsai-background.png);
+  background-image: linear-gradient(rgba(14, 32, 36, 0.7), rgba(14, 32, 36, 0.7)), url(../images/bonsai-background.png);
   background-position: center;
   background-size: cover;
   position: relative;
 }
-
-
-/* .header {
-  min-height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(rgba(14, 32, 36, 0.7), rgba(14, 32, 36, 0.7)), url(images/bonsai-background.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-} */
 
 nav {
   display: flex;
@@ -135,15 +131,19 @@ nav .fa {
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     background: #0d9217;
     height: 100vh;
-    width: 12rem;
+    width: var(--header-width);
     top: 0;
     right: 0;
     text-align: left;
     z-index: 2;
     transition: 1s;
+  }
+
+  .nav-links.hidden {
+    transform: translateX(var(--header-width));
   }
 
   nav .fa {
